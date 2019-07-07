@@ -10,8 +10,8 @@
 
 ### [Породжуючі (Creational)](Creational)
 
-* [Абстрактная фабрика (Abstract Factory)](Creational/AbstractFactory)
-* [Строитель (Builder)](Creational/Builder)
-* [Фабричный метод (Factory Method)](Creational/FactoryMethod)
+* [Fбстрактна фабрика (Abstract Factory)](Creational/AbstractFactory)
+* [Будівельник (Builder)](Creational/Builder)
+* [Фабричний метод (Factory Method)](Creational/FactoryMethod)
 * [Прототип (Prototype)](Creational/Prototype)
-* [Одиночка (Singleton)](Creational/Singleton)
+* [Одинак (Singleton)](Creational/Singleton)
