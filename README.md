@@ -15,3 +15,13 @@
 * [Фабричний метод (Factory Method)](Creational/FactoryMethod)
 * [Прототип (Prototype)](Creational/Prototype)
 * [Одинак (Singleton)](Creational/Singleton)
+
+### [Стуктуруючі (Structural)](Structural)
+
+* [Адаптер (Adapter)](Structural/Adapter)
+* [Міст (Bridge)](Structural/Bridge)
+* [Композиція (Composite)](Structural/Composite)
+* [Декоратор (Decorator)](Structural/Decorator)
+* [Фасад (Facade)](Structural/Facade)
+* [Легковажний (Flyweight)](Structural/Flyweight)
+* [Замісник (Proxy)](Structural/Proxy)
