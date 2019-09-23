@@ -10,7 +10,7 @@
 
 ### [Породжуючі (Creational)](Creational)
 
-* [Fбстрактна фабрика (Abstract Factory)](Creational/AbstractFactory)
+* [Абстрактна фабрика (Abstract Factory)](Creational/AbstractFactory)
 * [Будівельник (Builder)](Creational/Builder)
 * [Фабричний метод (Factory Method)](Creational/FactoryMethod)
 * [Прототип (Prototype)](Creational/Prototype)
