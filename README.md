@@ -26,3 +26,16 @@
 * [Фасад (Facade)](Structural/Facade)
 * [Легковажний (Flyweight)](Structural/Flyweight)
 * [Замісник (Proxy)](Structural/Proxy)
+
+### [Поведінкові (Behavioral)](Behavioral)
+
+* [Ланцюг відповідальності (Chain Of Responsibility)](Behavioral/ChainOfResponsibility) 
+* [Команда (Command)](Behavioral/Command) 
+* [Ітератор (Iterator)](Behavioral/Iterator) 
+* [Медіатор (Mediator)](Behavioral/Mediator) 
+* [Зберігач (Memento)](Behavioral/Memento) 
+* [Спостерігач (Observer)](Behavioral/Observer) 
+* [Стан (State)](Behavioral/State) 
+* [Стратегія (Strategy)](Behavioral/Strategy) 
+* [Шаблонний метод (Template Method)](Behavioral/TemplateMethod) 
+* [Відвідувач (Visitor)](Behavioral/Visitor) 
