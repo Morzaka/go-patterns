@@ -91,21 +91,21 @@ func (c *Cannery) GetKetchup() int {
 // Shop -- це реалізація конткретного колеги, а саме Магазину що продає кетчуп.
 type Shop struct {
 	mediator Mediator
-	money float64
+	money    float64
 }
 
-func (s *Shop )SetMediator(mediator Mediator) {
+func (s *Shop) SetMediator(mediator Mediator) {
 	s.mediator = mediator
 }
 
-func (s *Shop ) AddMoney(m float64) {
+func (s *Shop) AddMoney(m float64) {
 	s.money += m
 }
 
-func (s *Shop ) SellKetchup(ketchup int) {
+func (s *Shop) SellKetchup(ketchup int) {
 	s.money = float64(ketchup) * 54.75
 }
 
-func (s *Shop ) GetMoney() float64 {
+func (s *Shop) GetMoney() float64 {
 	return s.money
 }

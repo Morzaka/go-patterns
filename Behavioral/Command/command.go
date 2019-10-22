@@ -7,7 +7,7 @@ type Command interface {
 }
 
 // Receiver реалізація.
-type Receiver struct {}
+type Receiver struct{}
 
 // ToggleOn
 func (*Receiver) ToggleOn() string {
@@ -59,7 +59,7 @@ func (i *Invoker) UnStoreCommand() {
 // Execute виконати всі команди
 func (i *Invoker) Execute() string {
 	var result string
-	for _, v :=  range i.commands {
+	for _, v := range i.commands {
 		result += v.Execute() + "\n"
 	}
 	return result

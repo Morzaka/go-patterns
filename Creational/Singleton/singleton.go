@@ -11,7 +11,7 @@ type Singleton struct {
 
 var (
 	instance *Singleton
-	once sync.Once
+	once     sync.Once
 )
 
 // GetInstance повертає синглет

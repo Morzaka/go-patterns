@@ -27,13 +27,15 @@ func NewMobileAlert() *MobileAlert {
 }
 
 // MobileAlertVibration реалізує вібро сигнал
-type MobileAlertVibration struct {}
+type MobileAlertVibration struct{}
+
 func (m *MobileAlertVibration) Alert() string {
 	return "Vrrr... Brrr... Vrrr..."
 }
 
 // MobileAlertVibration реалізує сигнал оповіщення
-type MobileAlertSong struct {}
+type MobileAlertSong struct{}
+
 func (m *MobileAlertSong) Alert() string {
 	return "Черешні рвати, черешні їсти..."
 }

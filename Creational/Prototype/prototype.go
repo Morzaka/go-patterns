@@ -15,7 +15,7 @@ type ConcreteProduct struct {
 // NewConcreteProduct - конструктор прототипів.
 func NewConcreteProduct(name string) Prototyper {
 	return &ConcreteProduct{
-		name : name,
+		name: name,
 	}
 }
 

@@ -31,13 +31,13 @@ func (p *ConcretePublisher) Attach(observer Observer) {
 }
 
 // SetState задає новий стан видавця
-func (p *ConcretePublisher) SetState(state string)    {
+func (p *ConcretePublisher) SetState(state string) {
 	p.state = state
 }
 
 // Notify повідомляє всіх підписників(спостерігаців) про зміну стану
 // Метод проштовхування
-func (p *ConcretePublisher) Notify()                  {
+func (p *ConcretePublisher) Notify() {
 	for _, observer := range p.observers {
 		observer.Update(p.state)
 	}

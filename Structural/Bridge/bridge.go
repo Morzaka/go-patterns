@@ -17,7 +17,7 @@ type Car struct {
 }
 
 // NewCar конструктор нового авта
-func NewCar(engine Enginer) Carer{
+func NewCar(engine Enginer) Carer {
 	return &Car{
 		engine: engine,
 	}
@@ -45,4 +45,3 @@ type EngineHonda struct {
 func (e *EngineHonda) GetSound() string {
 	return "HhoooNnnnDddaaaa"
 }
-

@@ -81,7 +81,7 @@ func (i *BookIterator) Prev() {
 // Reset скидає ітератор.
 func (i *BookIterator) Reset() {
 	i.index = 0
-	i.internal =0
+	i.internal = 0
 }
 
 // End переходить до останнього пункту.

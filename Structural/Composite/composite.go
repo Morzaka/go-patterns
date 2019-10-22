@@ -11,27 +11,27 @@ type Component interface {
 
 // Directory реалізує гілки дерева.
 type Directory struct {
-	name string
+	name   string
 	childs []Component
 }
 
 // Add додає елемент до гілки дерева.
-func (d *Directory)	Add(child Component)        {
+func (d *Directory) Add(child Component) {
 	d.childs = append(d.childs, child)
 }
 
 // Name повертає ім'я компонента.
-func (d *Directory)	Name() string               {
+func (d *Directory) Name() string {
 	return d.name
 }
 
 // Child повертає дочірні елементи.
-func (d *Directory)	Child() []Component         {
+func (d *Directory) Child() []Component {
 	return d.childs
 }
 
 // Print повертає гілку в рядковому поданні.
-func (d *Directory)	Print(prefix string) string {
+func (d *Directory) Print(prefix string) string {
 	result := prefix + "/" + d.Name() + "\n"
 	for _, val := range d.Child() {
 		result += val.Print(prefix + "/" + d.Name())
@@ -44,11 +44,11 @@ type File struct {
 	name string
 }
 
-func (f *File) Name() string               {
+func (f *File) Name() string {
 	return f.name
 }
 
-func (f *File) Child() []Component         {
+func (f *File) Child() []Component {
 	return []Component{}
 }
 
@@ -58,7 +58,7 @@ func (f *File) Print(prefix string) string {
 
 func NewDirectory(name string) *Directory {
 	return &Directory{
-		name:   name,
+		name: name,
 	}
 }
 
