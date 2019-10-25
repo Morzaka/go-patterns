@@ -19,7 +19,7 @@ package Specification
 type Invoice struct {
 	Day    int
 	Notice int
-	IsSent   bool
+	IsSent bool
 }
 
 // Інтерфейс специфікації рахунків-фактур
@@ -35,6 +35,7 @@ type Specification interface {
 type BaseSpecification struct {
 	Specification
 }
+
 // Перевірка специфікації
 func (selfy *BaseSpecification) IsSatisfiedBy(elm Invoice) bool {
 	return false
@@ -70,6 +71,7 @@ type AndSpecification struct {
 	Specification
 	compare Specification
 }
+
 func (sa *AndSpecification) IsSatisfiedBy(elm Invoice) bool {
 	return sa.Specification.IsSatisfiedBy(elm) && sa.compare.IsSatisfiedBy(elm)
 }
@@ -78,6 +80,7 @@ type OrSpecification struct {
 	Specification
 	compare Specification
 }
+
 func (so *OrSpecification) IsSatisfiedBy(elm Invoice) bool {
 	return so.Specification.IsSatisfiedBy(elm) || so.compare.IsSatisfiedBy(elm)
 }
@@ -85,15 +88,18 @@ func (so *OrSpecification) IsSatisfiedBy(elm Invoice) bool {
 type NotSpecification struct {
 	Specification
 }
+
 func (sn *NotSpecification) IsSatisfiedBy(elm Invoice) bool {
 	return !sn.Specification.IsSatisfiedBy(elm)
 }
 
 //////////////////////////
+
 // Термін сплати рахунка-фактури - 30 днів або старше
 type OverDueSpecification struct {
 	Specification
 }
+
 func (od *OverDueSpecification) IsSatisfiedBy(elm Invoice) bool {
 	return elm.Day >= 30
 }
@@ -107,7 +113,8 @@ func NewOverDueSpecification() Specification {
 type NoticeSendSpecification struct {
 	Specification
 }
-func( nos *NoticeSendSpecification) IsSatisfiedBy(elm Invoice) bool {
+
+func (nos *NoticeSendSpecification) IsSatisfiedBy(elm Invoice) bool {
 	return elm.Notice >= 3
 }
 func NewNoticeSentSpecification() Specification {
@@ -120,6 +127,7 @@ func NewNoticeSentSpecification() Specification {
 type InCollectionSpecification struct {
 	Specification
 }
+
 func (*InCollectionSpecification) IsSatisfiedBy(elm Invoice) bool {
 	return elm.IsSent
 }

@@ -4,7 +4,7 @@ package AbstractFactory
 //AbstractFactory -- інтерфейс для створення сімейства пов'язаних об'єктів.
 type AbstractFactory interface {
 	CreateWater(volume float64) AbstractWater
-	CreateBotle(voleme float64) AbstractBotle
+	CreateBottle(volume float64) AbstractBottle
 }
 
 // AbstractWater інтерфейс Води.
@@ -12,9 +12,9 @@ type AbstractWater interface {
 	GetVolume() float64
 }
 
-// AbstractBotle інтерфейс Пляшки.
-type AbstractBotle interface {
-	PourWater(water AbstractWater) //Bottle iteract with a water.
+// AbstractBottle інтерфейс Пляшки.
+type AbstractBottle interface {
+	PourWater(water AbstractWater) //Bottle interacts with a water.
 	GetBottleVolume() float64
 	GetWaterVolume() float64
 }
@@ -34,7 +34,7 @@ func (f *CocaColaFactory) CreateWater(volume float64) AbstractWater {
 }
 
 // CreateBottle реалізаця методу інтерфеса AbstractFactory.
-func (f *CocaColaFactory) CreateBotle(volume float64) AbstractBotle {
+func (f *CocaColaFactory) CreateBottle(volume float64) AbstractBottle {
 	return &CocaColaBotle{volume: volume}
 }
 

@@ -79,4 +79,3 @@ func (s *BurgerBar) Accept(v Visitor) string {
 func (s *BurgerBar) BuyBurger() string {
 	return "Buy burger..."
 }
-

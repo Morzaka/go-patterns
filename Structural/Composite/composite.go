@@ -44,6 +44,8 @@ type File struct {
 	name string
 }
 
+func (f *File) Add(child Component) {}
+
 func (f *File) Name() string {
 	return f.name
 }

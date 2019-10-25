@@ -31,11 +31,11 @@ type ConcreteFlyweight struct {
 }
 
 // GetName повертає ім'я
-func (c ConcreteFlyweight) GetName() string {
+func (c *ConcreteFlyweight) GetName() string {
 	return "My name: " + c.name
 }
 
 // SetName встановлює ім'я
-func (c ConcreteFlyweight) SetName(name string) {
+func (c *ConcreteFlyweight) SetName(name string) {
 	c.name = name
 }
