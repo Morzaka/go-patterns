@@ -110,7 +110,7 @@ type NoticeSendSpecification struct {
 func( nos *NoticeSendSpecification) IsSatisfiedBy(elm Invoice) bool {
 	return elm.Notice >= 3
 }
-func NewNoticeSpecification() Specification {
+func NewNoticeSentSpecification() Specification {
 	a := &NoticeSendSpecification{&BaseSpecification{}}
 	a.Relate(a)
 	return a
@@ -120,8 +120,8 @@ func NewNoticeSpecification() Specification {
 type InCollectionSpecification struct {
 	Specification
 }
-func (self *InCollectionSpecification) IsSatisfiedBy(elm Invoice) bool {
-	return !elm.IsSent
+func (*InCollectionSpecification) IsSatisfiedBy(elm Invoice) bool {
+	return elm.IsSent
 }
 func NewInCollectionSpecification() Specification {
 	a := &InCollectionSpecification{&BaseSpecification{}}
