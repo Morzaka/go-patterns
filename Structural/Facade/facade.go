@@ -1,4 +1,4 @@
-//
+// пакет Facade представляє реалізацію патерну фасад
 package Facade
 
 import (

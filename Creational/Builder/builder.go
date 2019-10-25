@@ -1,5 +1,5 @@
 //builder пакет є прикладом патерну Builder.
-package builder
+package Builder
 
 // Builder реалізує інтерфейс будівельника
 type Builder interface {

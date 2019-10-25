@@ -1,4 +1,4 @@
-package adapter
+package Adapter
 
 // Target абезпечує інтерфейс, з яким система повинна працювати.
 type Target interface {

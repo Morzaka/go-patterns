@@ -1,5 +1,5 @@
 //Пакет abstract_factory є прикладом патерна абстрактної фабрики.
-package abstract_factory
+package AbstractFactory
 
 //AbstractFactory -- інтерфейс для створення сімейства пов'язаних об'єктів.
 type AbstractFactory interface {

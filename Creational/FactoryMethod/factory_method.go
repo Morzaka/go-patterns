@@ -1,5 +1,5 @@
 //Пакет factory_method є прикладом патерну FactoryMethod.
-package factory_method
+package FactoryMethod
 
 import (
 	"log"

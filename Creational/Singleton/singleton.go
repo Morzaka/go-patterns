@@ -1,5 +1,5 @@
 // package singleton є прикладом шаблону Singleton.
-package singleton
+package Singleton
 
 import (
 	"sync"

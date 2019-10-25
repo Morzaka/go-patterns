@@ -39,3 +39,5 @@
 * [Стратегія (Strategy)](Behavioral/Strategy) 
 * [Шаблонний метод (Template Method)](Behavioral/TemplateMethod) 
 * [Відвідувач (Visitor)](Behavioral/Visitor) 
+
+##### * [Бізнеслогіка (Specification)](Specification)
