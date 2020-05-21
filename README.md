@@ -40,4 +40,7 @@
 * [Шаблонний метод (Template Method)](Behavioral/TemplateMethod) 
 * [Відвідувач (Visitor)](Behavioral/Visitor) 
 
+### [Конкурентність (Concurrency)](Concurrency)
+* [Квадратні числа (Squaring numbers)](Concurrency/squaring_numbers.go) 
+
 ##### * [Бізнеслогіка (Specification)](Specification)
